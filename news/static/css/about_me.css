@@ -1,0 +1,119 @@
+.contents {
+    background-color: rgb(101, 212, 230);
+    width:  100%;
+    height: 40rem;
+}
+
+/* Navbar */
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.prnt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.sub-nav-left{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.nav-item{
+    height: 50px;
+    justify-items: center;
+    align-content: center;
+}
+
+.blog{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.item{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-search{
+    display: flex;
+    height: 40px;
+    width: 200px;
+    border-radius: 4px;
+    margin-right: 100px;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-ico{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: blue;
+    border: 1px solid rgba(255, 255, 255, 0.632);
+    background-color: transparent;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.back-button button {
+    height: 3rem;
+    width: 6rem;
+    padding: 0.5rem;
+    background-color: blue;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.about p {
+    width: 80%;
+    margin-top: 1rem;
+    text-align: justify;
+    line-height: 2rem;
+}

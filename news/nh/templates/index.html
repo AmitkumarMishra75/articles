@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="prnt">
+                <div class="sub-nav-left ">
+                    <div class="nav-item border">
+                        <p class="blog">My Blogs</p>
+                    </div>
+                    <div class="nav-item border">
+                        <p class="item">Home</p>
+                    </div>
+                    <div class="nav-item border">
+                        <p class="item"><a href="{% url 'about_me' %}">About</a></p>
+                    </div>
+                </div>
+
+                <div class="nav-search">
+                    <input placeholder=" Search " class="search-input">
+                    <div class="search-ico">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <section>
+        <h1 align="center">Today's Articles</h1>
+    </section>
+    <br>
+    <div class="article">
+        {% for i in article %}
+            <div class="content">
+                <a href="{% url 'display1' i.id %}"><h3>{{i.heading}}</h3></a>
+                <p>{{i.content|truncatewords:10}}</p>
+            </div>
+            <br>
+        {% endfor %}
+        <!-- <div class="content">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quo asperiores.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates</p>
+        </div> -->
+    </div>
+</body>
+</html>
